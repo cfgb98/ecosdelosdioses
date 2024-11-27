@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    font-family: 'Lora', serif; /* Fuente base para todo el texto */
+}
+
+h1, h2, h3,h4,h5,h6 {
+    font-family: 'Cinzel', serif; /* Fuente para los encabezados */
+}
+

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {ref} from "vue";
 import Footer from "./components/Footer.vue";
+import SingUpForm from "./components/SingUpForm.vue";
 
 const civilizations = ref([
   {
@@ -50,7 +51,7 @@ const civilizations = ref([
             <p class="text-gray-300 mt-2 text-sm">{{ civilization.description }}</p>
             <button
                 class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition" >
-              Explorar más
+              Explorar m&aacute;s
             </button>
           </div>
         </div>
@@ -58,7 +59,7 @@ const civilizations = ref([
     </main>
     <Footer/>
   </div>
-
+  <SingUpForm/>
 </template>
 
 <style scoped>
