@@ -27,11 +27,11 @@ const civilizations = ref([
 </script>
 
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white">
-    <header class="bg-gray-800 shadow-md">
+  <div class="min-h-screen bg-gradient-to-r from-amber-200 via-yellow-100 to-orange-200 flex items-center justify-center">
+    <header class="bg-orange-400 shadow-md">
       <div class="container mx-auto px-4 py-6">
-        <h1 class="text-3xl font-bold text-center">Mundos Míticos</h1>
-        <p class="text-center text-gray-400">Explora los mitos y leyendas de las civilizaciones antiguas</p>
+        <h1 class="text-3xl font-bold text-center text-black-300">Mundos Míticos</h1>
+        <p class="text-center text-gray-300">Explora los mitos y leyendas de las civilizaciones antiguas</p>
       </div>
     </header>
 
@@ -40,7 +40,7 @@ const civilizations = ref([
         <div
             v-for="civilization in civilizations"
             :key="civilization.id"
-            class="bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+            class="bg-orange-400 rounded-lg shadow-lg overflow-hidden">
           <img
               :src="civilization.image"
               :alt="civilization.name"
@@ -50,16 +50,17 @@ const civilizations = ref([
             <h2 class="text-xl font-semibold">{{ civilization.name }}</h2>
             <p class="text-gray-300 mt-2 text-sm">{{ civilization.description }}</p>
             <button
-                class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition" >
+                class="mt-4 border-orange-300  focus:ring-orange-400 focus:border-orange-400 text-white py-2 px-4 rounded transition" >
               Explorar m&aacute;s
             </button>
           </div>
         </div>
       </section>
     </main>
-    <Footer/>
+
   </div>
   <SingUpForm/>
+  <Footer/>
 </template>
 
 <style scoped>
